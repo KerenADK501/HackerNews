@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Story } from '../../story';
 import { HackerNewsService } from 'src/app/hacker-news.service';
 import { ActivatedRoute, Router } from '@angular/router';
 

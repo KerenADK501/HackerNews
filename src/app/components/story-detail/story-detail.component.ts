@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HackerNewsService } from 'src/app/hacker-news.service';
-import { HACKER_NEWS_SERVICE_TOKEN } from 'src/app/injection-tokens'; // Adjust the path
+import { HACKER_NEWS_SERVICE_TOKEN } from 'src/app/injection-tokens'; // adjust path as needed
 
 
 @Component({

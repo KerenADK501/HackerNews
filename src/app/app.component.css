@@ -34,9 +34,6 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #8e49de;
-}
 
 .container {
     max-width: 500px;
@@ -63,4 +60,10 @@ a:hover {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
