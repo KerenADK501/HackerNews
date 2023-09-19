@@ -1,0 +1,12 @@
+<div *ngFor="let story of stories">
+    <div>
+      <p>{{ story.title }}</p>
+      <a *ngIf="story.url" [href]="story.url" target="_blank">Go to story</a>
+      <ng-container *ngIf="!story.url">No link available</ng-container>
+    </div>
+  </div>
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage * 10 >= newestStoryIds.length">Next</button>
+  </div>

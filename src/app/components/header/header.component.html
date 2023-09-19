@@ -1,0 +1,11 @@
+<header>
+  <h1>{{ title }}</h1>
+  <section>
+    <form (submit)="searchStories()">
+      <input type="text" placeholder="Search Titles" [(ngModel)]="searchQuery" name="searchQuery" />
+      <button class="primary" type="submit">Search</button>
+    </form>
+    <button class="clear-button" (click)="clearSearch()">Clear Search</button>
+  </section>
+</header>
+

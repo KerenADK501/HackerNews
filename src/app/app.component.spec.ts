@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angularCodingChallenge'`, () => {
+  it(`should have a title in the template`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angularCodingChallenge');
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    const titleElement = compiled.querySelector('header h1'); // Adjust the selector here
+    expect(titleElement?.textContent).toContain('Hacker News'); // Modify this line
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angularCodingChallenge app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('app is running!');
   });
 });

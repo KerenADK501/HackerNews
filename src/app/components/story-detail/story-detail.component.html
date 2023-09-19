@@ -1,0 +1,11 @@
+<div *ngIf="story">
+    <h2>{{ story.title }}</h2>
+    <p>
+      <a [href]="story.url" target="_blank">Read the full article</a>
+    </p>
+  </div>
+  <div *ngIf="!story">
+    <p>Loading...</p>
+  </div>
+    <div>
+        <a routerLink="/">Back to stories</a>  

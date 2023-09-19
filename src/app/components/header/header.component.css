@@ -1,0 +1,8 @@
+header{
+    display: flex;
+    justify-content:flex-start;
+    align-items: left;
+    padding: 0 1rem;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
